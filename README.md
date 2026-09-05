@@ -47,6 +47,10 @@ and is MIT-licensed. Fork it, change it, ship your own converter.
 Hobby accounts: install the **Vercel GitHub App** on the fork if the import
 screen asks you to connect GitHub. That is what enables auto-deploy on push.
 
+If the live URL shows a Vercel login page instead of Cashio, open the project
+**Settings → Deployment Protection** and turn **Vercel Authentication** off
+so anyone can open the converter (needed for airplane-mode / iPhone use).
+
 ## Run locally
 
 You need [Node.js 22+](https://nodejs.org/).

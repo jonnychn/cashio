@@ -25,7 +25,8 @@ on first launch without a network.
 
 ## Fork and deploy (5 minutes)
 
-This repo is public MIT. Fork it, change it, ship your own converter.
+This repo is a **GitHub Template** ([Use this template](https://github.com/jonnychn/cashio/generate))
+and is MIT-licensed. Fork it, change it, ship your own converter.
 
 ### Option A — one-click clone on Vercel
 

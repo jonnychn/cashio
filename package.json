@@ -1,6 +1,16 @@
 {
   "name": "cashio",
+  "description": "Offline-first currency converter for travel. Fork and deploy on Vercel.",
   "private": true,
+  "license": "MIT",
+  "homepage": "https://github.com/jonnychn/cashio",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonnychn/cashio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jonnychn/cashio/issues"
+  },
   "sideEffects": false,
   "type": "module",
   "overrides": {

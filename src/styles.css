@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #efe8dc;
+  --color-surface: #f7f1e6;
+  --color-raised: #fffaf1;
+  --color-ink: #1c1915;
+  --color-muted: #6f6a60;
+  --color-faint: #9a9488;
+  --color-accent: #1f3d34;
+  --color-accent-fg: #f7f1e6;
+  --color-stamp: #2a4f44;
+  --color-border: color-mix(in oklab, var(--color-ink) 12%, transparent);
+  --color-border-strong: color-mix(in oklab, var(--color-ink) 22%, transparent);
+
+  --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, ui-serif, Georgia, serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --text-brand: clamp(2.1rem, 5vw, 2.5rem);
+  --text-hero: clamp(2.75rem, 7vw, 3.25rem);
+  --text-amount: clamp(2rem, 5vw, 2.5rem);
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-2xl: 32px;
+
+  --shadow-border:
+    0px 0px 0px 1px color-mix(in oklab, var(--color-ink) 8%, transparent),
+    0px 1px 2px -1px color-mix(in oklab, var(--color-ink) 6%, transparent),
+    0px 8px 24px -12px color-mix(in oklab, var(--color-ink) 10%, transparent);
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --motion-quick: 150ms;
+  --motion-fast: 250ms;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    min-height: 100dvh;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  h1, h2, h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
